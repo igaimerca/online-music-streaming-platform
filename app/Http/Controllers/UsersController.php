@@ -94,14 +94,14 @@ class UsersController extends Controller
       }
     }
 
-    if (count($arr) > 0 && empty($arr[0])) {
-      $new_str = $arr[1];
+    if (count($arr) > 0 && empty($arr['1'])) {
+      $new_str = $arr['2'];
     } else {
       $new_str = $this->arrayToString(',,,', $arr);
     }
     $user->{"favourite_{$type}s"} = $new_str;
     $user->save();
-    return response()->json(['data' => $user], 200);
+    return response()->json(['data' => $new_str], 200);
   }
 
   public function destroy(Request $request)
