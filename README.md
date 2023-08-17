@@ -1,8 +1,8 @@
-# Zatec challenge
+# online-music-streaming-platform
 
 This is a Laravel project. It uses Laravel and MySQL.
 
-1. Clone the repo `git clone https://github.com/igaimerca/zatec-challenge-api`.
+1. Clone the repo `git clone https://github.com/igaimerca/online-music-streaming-platform`.
 2. Copy `.env.example` file to `.env` on root folder and configure your database.
 3. Install composer dependencies: `composer install`.
 4. Run database migrations: `php artisan migrate`.
